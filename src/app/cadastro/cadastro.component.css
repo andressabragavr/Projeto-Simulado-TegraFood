@@ -1,0 +1,89 @@
+.body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    overflow: hidden;
+}
+
+.img {
+    height: 100vh;
+    width: 35%;
+    object-fit: cover;
+    display: block;
+}
+
+.arrow-button ::ng-deep .p-button {
+    color: #000000;
+    margin-right: 850px;
+}
+
+.conteudo {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    color: #223263;
+    font-size: 20px;
+    padding-top: 120px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.descricao {
+    color: #9098B1;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-icon {
+    position: relative;
+    margin-bottom: 20px; 
+    align-items: center;
+}
+
+.input-icon i {
+    position: absolute;
+    top: 35%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #9098B1;
+}
+
+.cadastro {
+    border-color: #EBF0FF;
+    width: 343px;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 1px;
+    font-family: 'Poppins', sans-serif;
+    color: #9098B1;
+    padding-left: 40px;
+}
+
+.botao {
+    background-color: #DC9000;
+    border-color: #DC9000;
+    color: #fff;
+    width: 343px;
+    height: 55px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    align-self: center;
+}
+
+.cadastre {
+    color: #40BFFF;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 5px;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

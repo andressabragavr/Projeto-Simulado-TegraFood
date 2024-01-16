@@ -1,0 +1,74 @@
+<div class="conteudo">
+    <div class="barra_lateral" >
+        <div class="container_logo"><img src="./assets/Logo.png" class="logo"></div>
+        <div style="border: 1px white;"><p-menu [model]="items" class="custom-menu"></p-menu></div>
+        
+    </div>
+
+    <div class="listagem">
+        <div class="header">
+            <p-button icon="pi pi-shopping-cart" [rounded]="true" [text]="true" class="custom-icon" size="large" (click)="routingCarrinho()"></p-button>
+            <p-button icon="pi pi-bell" [rounded]="true" [text]="true" class="custom-icon"></p-button>
+            <p-button icon="pi pi-user" [rounded]="true" [text]="true" class="custom-icon"></p-button>
+        </div>
+        <div class="titles">
+            <h1 class="title">Produtos</h1>
+            <h1 class="title">Todos</h1>
+
+            <div class="card flex justify-content-center">
+                <p-overlayPanel #op>
+                    <p class="filter-header">Filtrar por preço:</p>
+                    <p-button label="R$5 à R$25" class="button-filter" (onClick)="showPrices(1)"></p-button>
+                    <p-button label="R$26 à R$45" class="button-filter" (onClick)="showPrices(2)"></p-button>
+                    <p-button label="R$46 ou mais" class="button-filter" (onClick)="showPrices(3)"></p-button>
+                    <p-button icon="pi pi-trash" [rounded]="true" [text]="true" *ngIf="filtro != 0" class="trash-filter" (onClick)="showPrices(0)"></p-button>
+                </p-overlayPanel>
+            </div>
+
+            <p-button (click)="op.toggle($event)" icon="pi pi-filter-fill" [rounded]="true" [text]="true" class="button-icon"></p-button>
+            <p-button (click)="sortIconClick()" [icon]="icon" [rounded]="true" [text]="true" class="button-icon"></p-button>
+        </div>
+
+        <br><br>
+                
+        <div class="card">
+            <p-dataView #dv [value]="products" [sortField]="sortField" [sortOrder]="sortOrder">
+                <ng-template pTemplate="list" let-products>
+                    <div class="grid grid-nogutter">
+                        <div class="col-12" *ngFor="let item of products; let first = first">
+                            <div class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4" [ngClass]="{ 'border-top-1 surface-border': !first }">
+                                <img class="w-9 sm:w-16rem xl:w-7rem shadow-2 block xl:block mx-auto border-round" [src]="'/assets' + item.image" [alt]="item.name" />
+                                <div class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-start flex-1 gap-4">
+                                    <div class="flex flex-column align-items-center sm:align-items-start gap-3">
+                                        <div class="text-2xl font-bold text-900">{{ item.name }}</div>
+                                        <div class="flex align-items-center gap-3">
+                                            <span class="flex align-items-center gap-2">
+                                                <span class="font-semibold">{{ item.description }}</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="flex sm:flex-column align-items-center sm:align-items-center gap-3 sm:gap-2">
+                                        <span class="text-1xl font-bold" style="color: #223263;">{{ 'R$' + item.price.toFixed(2) }}</span>
+                                        <p-button type="button" (click)="showWarningCarrinho(); addCarrinho(item)" label="Comprar" class="custom-button"></p-button> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-dataView>
+        </div>
+        <div>    
+
+    </div>
+    
+</div>
+
+<p-toast position="bottom-center" key="bc" class="custom-toast">
+    <ng-template let-message pTemplate="message">
+        <div class="flex align-items-center justify-content-around">
+            <div class="custom-summary">{{ message.summary }}</div> <br><br>
+            <p-button label="{{ message.detail }}" [text]="true" [ngClass]="message.id === 'add' ? 'toast-button' : 'toast-button2'" (click)="toastClick(message.id)"></p-button>
+        </div>
+    </ng-template>
+</p-toast>

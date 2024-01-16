@@ -1,0 +1,161 @@
+.header {
+    background-color: #DC9000;
+    padding: 2%;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.custom-icon ::ng-deep .p-button{
+    color: #fff;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.custom-icon ::ng-deep .p-button-icon {
+    font-size: 1.5rem;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #223263;
+    font-size: 32px;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+
+.custom-dropdown ::ng-deep .p-dropdown {
+    background-color: #DC9000;
+}
+
+p-dropdown ::ng-deep .p-dropdown-label {
+    color: #fff;
+}
+
+p-dropdown ::ng-deep .p-dropdown-trigger {
+    color: #fff;
+}
+
+.price-area {
+    display: flex;
+    flex-direction: row;
+}
+
+.trash-icon ::ng-deep .p-button {
+   color: #223263;
+   margin-left: 30px;
+   margin-top: 10px;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.cupom-area {
+    border-radius: 8px;
+    border-width: 0.5px;
+    border-style: solid;
+    width: 680px;
+    height: 100px;
+    margin: 50px -10px 50px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cupom-title {
+    color:#223263;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.cupom-input {
+    height: 50px;
+    width: 200px;
+    border-radius: 8px;
+    border-width: 0.5px;
+    margin-top: 25px;
+}
+
+.custom-button2 ::ng-deep .p-button {
+    background-color: #DC9000; 
+    border-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-right: 50px;
+    margin-top: 25px;
+}
+
+.total-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.total-area-items {
+    border-radius: 4px;
+    border-width: 0.5px;
+    border-style: solid;
+    width: 200px;
+    height: 54px;
+    margin-left: 50px;
+}
+
+.table-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 18px;
+}
+
+.table-total {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #223263;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.area-value {
+    margin-right: 50px;
+    margin-left: -50px;
+}
+
+.underlined-button2 ::ng-deep .p-button {
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+.buttons-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.underlined-button ::ng-deep .p-button {
+    color: #223263;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.custom-button ::ng-deep .p-button {
+    background-color: #DC9000; 
+    border-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-right: 50px;
+}

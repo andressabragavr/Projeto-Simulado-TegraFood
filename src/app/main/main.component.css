@@ -1,0 +1,196 @@
+.conteudo {
+    display: flex;
+    flex-direction: row;
+}
+
+.barra_lateral {
+    display: flex block;
+    flex-direction: column;
+    background-color: #6A0000;
+    flex: 0.2;
+    overflow: hidden;
+    position: static;
+    top: 0;
+    left: 0;
+}
+
+.container_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12% 0%;
+}
+.logo {
+    width: 60%;
+    align-self: center;
+    height: 120px;
+}
+
+.custom-menu ::ng-deep .p-menuitem {
+    border-top: white 1px solid;
+}
+
+.custom-menu ::ng-deep .p-menuitem:last-child {
+    border-bottom: white 1px solid;
+}
+
+.custom-menu ::ng-deep .p-menu {
+    background-color: #6A0000;
+    color: #fff;
+    border-radius: 0%;
+    width: auto;
+    border: white 1px;
+    
+}
+
+.custom-menu ::ng-deep .p-focus > div{
+    background-color: #DC9000
+}
+
+.custom-menu ::ng-deep a {
+    justify-content: center;
+}
+
+p-menu ::ng-deep .p-menuitem-text {
+    color: #fff;
+}
+
+.listagem {
+    flex: 1;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.header {
+    background-color: #DC9000;
+    padding: 2%;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: static;
+    top: 0;
+}
+
+.custom-icon ::ng-deep .p-button{
+    color: #fff;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.custom-icon ::ng-deep .p-button-icon {
+    font-size: 1.5rem;
+}
+
+.filter-header {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #223263;
+}
+
+.custom-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #223263;
+}
+
+.custom-title2 {
+    color: #00000080;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.button-icon ::ng-deep .p-button {
+    color: #DC9000;
+    margin-top: 25px;
+}
+
+.button-icon ::ng-deep .p-button-icon {
+    color: #DC9000;
+    font-size: 1.5rem;
+}
+
+.trash-filter  ::ng-deep .p-button {
+    color: #000000;
+}
+
+.button-filter ::ng-deep .p-button {
+    background-color: #DC9000;
+    border-color: transparent;
+    margin-left: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+p-dialog ::ng-deep .p-dialog-title {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+}
+
+.text-1xl font-bold
+
+.botao {
+    background-color: #DC9000;
+    border-color: #DC9000;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    align-self: center;
+}
+
+.custom-button ::ng-deep .p-button {
+    background-color: #DC9000; 
+    border-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.custom-toast ::ng-deep .p-toast {
+    background-color: #223263;
+    border-radius: 5px;
+    width: 580px;
+}
+
+p-toast ::ng-deep .p-toast-icon-close {
+    color: #fff;
+    margin-left: 20px;
+}
+
+.custom-summary {
+    color: white; 
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 10px 0 10px;
+}
+
+.toast-button ::ng-deep .p-button {
+    color: #DC9000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 10px 10px 0 50px;
+}
+
+.toast-button2 ::ng-deep .p-button {
+    color: #DC9000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 10px 20px 0 120px;
+}
