@@ -103,6 +103,13 @@ p-menu ::ng-deep .p-menuitem-text {
     color: #223263;
 }
 
+.title2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #DC9000;
+    text-decoration: underline;
+}
+
 .custom-title {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;

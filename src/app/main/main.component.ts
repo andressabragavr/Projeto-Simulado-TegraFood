@@ -36,6 +36,8 @@ export class MainComponent implements OnInit {
 
   filtro = 0;
 
+  selecionados = "Todos";
+
   constructor(private productService: ProductService, private messageService: MessageService, private router: Router, private carrinhoService: CarrinhoService) { }
 
   ngOnInit() {
@@ -101,6 +103,7 @@ export class MainComponent implements OnInit {
   }
 
   showItems(category: string) {
+    this.selecionados = category.charAt(0).toUpperCase() + category.slice(1);
     switch (category) {
       case 'todos':
         this.products = this.productService.allItems();
